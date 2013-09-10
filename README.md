@@ -22,7 +22,7 @@ for (var i = 0; i < 5; i += 1) {
 //
 batches.each(function (batch) {
   Logger.log(batch);
-  // make request to get batch users here
+  // make batched URLFetchApp request here
 });
 ```
 
@@ -34,10 +34,7 @@ batches.each(function (batch) {
 
 ## Dependencies
 
-Underscore
-```
-MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48
-```
+Underscore | `MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48`
 
 ## License
 ```
