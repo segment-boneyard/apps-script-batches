@@ -1,4 +1,3 @@
-v4 / 2013-09-09
-==================
-
- * initial commit
+4 - September 9, 2013
+---------------------
+* initial commit
