@@ -1,6 +1,6 @@
 # batches
 
-URLFetchApp and other request related Google Apps Script calls are time constrained. You can get more processing if you request database items in batch.
+`URLFetchApp.fetch` and other request related Google Apps Script calls are time constrained, which means your script will quickly run out of time. You can get more processing if you request database items in batch.
 
 You can find the Googe Apps Script project [here](https://script.google.com/d/MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_/edit).
 
