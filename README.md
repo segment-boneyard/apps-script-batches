@@ -19,7 +19,7 @@ for (var i = 0; i < 5; i += 1) {
   batches.push('user' + i);
 }
 
-//
+// traverse each of the batches
 batches.each(function (batch) {
   Logger.log(batch);
   // make batched URLFetchApp request here
