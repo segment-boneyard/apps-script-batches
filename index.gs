@@ -36,7 +36,7 @@ Batches.prototype.push = function (item) {
  */
 
 Batches.prototype.each = function (iterator) {
-  for (var i = 0, batch; batch = this.batches[i]; i++) iterator(batch);
+  for (var i = 0, batch; batch = this.batches[i]; i++) iterator(batch, i);
   return this;
 };
 
