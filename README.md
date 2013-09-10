@@ -9,28 +9,25 @@ URLFetchApp and other request related Google Apps Script calls are time constrai
 ## API
 
 ```js
+// create batches of maximum size 2
 var batches = Batches.create(2);
 
+// push the tasks
 for (var i = 0; i < 5; i += 1) {
-  batches.push({ url: 'https://admin.company.com/users/' + i });
+  batches.push('user' + i);
 }
 
+//
 batches.each(function (batch) {
   Logger.log(batch);
+  // make request to get batch users here
 });
 ```
+
 ```
-/*
-[13-09-09 23:22:32:585 PDT] [
-  {url=https://admin.company.com/users/0}, {url=https://admin.company.com/users/1}
-]
-[13-09-09 23:22:32:585 PDT] [
-  {url=https://admin.company.com/users/2}, {url=https://admin.company.com/users/3}
-]
-[13-09-09 23:22:32:585 PDT] [
-  {url=https://admin.company.com/users/4}
-  ]
-*/
+[13-09-09 23:22:32:585 PDT] [user0, user1]
+[13-09-09 23:22:32:585 PDT] [user2, user3]
+[13-09-09 23:22:32:585 PDT] [user4]
 ```
 
 ## License
