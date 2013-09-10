@@ -26,7 +26,7 @@ batches.each(function (batch) {
 });
 ```
 
-and the log shows the batched user id:
+and the log shows the batched user ids:
 ```
 [13-09-09 23:22:32:585 PDT] [user0, user1]
 [13-09-09 23:22:32:585 PDT] [user2, user3]
