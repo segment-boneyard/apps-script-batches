@@ -1,10 +1,10 @@
 /**
- * Creates a group of batches with a max `size`.
+ * Creates a group of batches with a `max` size.
  *
- * @param {Number} size
+ * @param {Number} max
  * @returns {Batches}
  */
 
-function create (size, callback) {
-  return new Batches_(size);
+function create (max) {
+  return new Batches_(max);
 }

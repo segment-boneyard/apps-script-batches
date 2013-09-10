@@ -1,35 +1,51 @@
-var _ = Underscore.load();
-
 /**
- * A single batches container
- * @param {int} size   The maximum size of a single batch
- * @returns {Batches}  A Batches container
+ * Initialize a group of `Batches` with a `max` size.
+ *
+ * @param {Number} max
+ * @return {Batches}
  */
-function Batches_ (size) {
+
+function Batches_ (max) {
   this.batches = [[]];
-  this.size = size;
+  this.max = max;
   this.count = 0;
 }
 
-Batches_.prototype._last = function () {
-  return _.last(this.batches);
-};
 
 /**
- * Pushes an item into the last batch
- * @param {object} item  Item to push
+ * Push a new `item` onto the current batch.
+ *
+ * @param {Object} item
  */
+
 Batches_.prototype.push = function (item) {
   var last = this._last();
   last.push(item);
   this.count += 1;
-  if (last.length >= this.size) this.batches.push([]);
+  if (last.length >= this.max) this.batches.push([]);
 };
 
+
 /**
- * Traverses the batches
- * @param {function} fn  Callback to call on each batch
+ * Traverse the batches with an `iterator`.
+ *
+ * @param {Function} iterator
+ * @return {Batches}
  */
-Batches_.prototype.each = function (fn) {
-  return _.each(this.batches, fn);
+
+Batches_.prototype.each = function (iterator) {
+  for (var i = 0, batch; batch = this.batches[i]; i++) iterator(batch);
+  return this;
+};
+
+
+/**
+ * Return the current last batch.
+ *
+ * @return {Array}
+ * @api private
+ */
+
+Batches_.prototype._last = function () {
+  return this.batches[this.batches.length-1];
 };

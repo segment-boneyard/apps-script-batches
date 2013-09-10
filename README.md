@@ -8,7 +8,7 @@ You can find the Googe Apps Script project [here](https://script.google.com/d/MY
 
     MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_
 
-## API
+## Example
 
 ```js
 // create batches of maximum size 2
@@ -32,6 +32,11 @@ and the log shows the batched user ids:
 [13-09-09 23:22:32:585 PDT] [user2, user3]
 [13-09-09 23:22:32:585 PDT] [user4]
 ```
+## API
+
+### Batches.create(max)
+  
+  Create a new set of `Batches` with the given `max` size.
 
 ## Dependencies
 
