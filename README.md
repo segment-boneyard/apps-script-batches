@@ -35,6 +35,8 @@ and the log shows the batched user id:
 
 ## Dependencies
 
+If you're *not* installing via the project key, but by adding the `.gs` files to your project, you'll need these dependencies:
+
 **Underscore** `MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48`
 
 ## License
