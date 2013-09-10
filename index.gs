@@ -15,7 +15,7 @@ function Batches (max) {
 
 
 /**
- * Push a new `item` onto the current batch.
+ * Push a new `item` onto the last batch.
  *
  * @param {Object} item
  */
@@ -42,7 +42,7 @@ Batches.prototype.each = function (iterator) {
 
 
 /**
- * Return the current last batch.
+ * Return the last batch.
  *
  * @return {Array}
  * @api private
