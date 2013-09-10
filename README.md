@@ -1,15 +1,11 @@
-# model-firebase
+# batches
 
-  Batching for Google Apps Script.
-
-## Why?
-
-URLFetchApp and other request related Google Apps Script calls are time constrained. You can get more processing if you get items from your database in batch.
+URLFetchApp and other request related Google Apps Script calls are time constrained. You can get more processing if you get items from your database in batch. `batches` helps you batch items for your requests.
 
 ## Installation
 
-    Project Key: `MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_`
-    Identifier: `Batches`
+Project Key: `MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_`
+Identifier: `Batches`
 
 ## API
 
