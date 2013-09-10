@@ -2,6 +2,8 @@
 
 URLFetchApp and other request related Google Apps Script calls are time constrained. You can get more processing if you request database items in batch.
 
+You can find the Googe Apps Script project [here](https://script.google.com/d/MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_/edit).
+
 ## Project Key
 
     MYDQZSBPCbaPiuU-CxeBcQ8fbAXhMFjX_
@@ -28,6 +30,13 @@ batches.each(function (batch) {
 [13-09-09 23:22:32:585 PDT] [user0, user1]
 [13-09-09 23:22:32:585 PDT] [user2, user3]
 [13-09-09 23:22:32:585 PDT] [user4]
+```
+
+## Dependencies
+
+Underscore
+```
+MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48
 ```
 
 ## License
