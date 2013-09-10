@@ -34,7 +34,7 @@ batches.each(function (batch) {
 
 ## Dependencies
 
-Underscore `MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48`
+**Underscore** `MGwgKN2Th03tJ5OdmlzB8KPxhMjh3Sh48`
 
 ## License
 ```
